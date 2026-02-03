@@ -10,10 +10,13 @@ This is a PHP-based Authentication and Profile Management system with the follow
 
 ### Features
 - **User Authentication**: Login and signup functionality with secure password hashing
+- **Registration Success Message**: User-friendly success notification after signup
 - **Profile Management**: Edit user name and email address
 - **Password Security**: Change password with current password verification
 - **Session Management**: Secure session handling and logout functionality
+- **Logout System**: Complete session termination with cookie cleanup
 - **Form Validation**: Input validation and error handling with user-friendly messages
+- **Responsive UI**: Modern, clean interface built with Tailwind CSS
 
 ### File Structure
 - `login.php` - User login page
@@ -30,3 +33,20 @@ This is a PHP-based Authentication and Profile Management system with the follow
 ### Technologies Used
 - PHP (Backend)
 - MySQL (Database)
+
+## Logout System
+
+The logout system ensures secure termination of user sessions:
+
+### How It Works
+1. **Session Cleanup**: Clears all session variables
+2. **Session Destruction**: Destroys the session
+3. **Cookie Removal**: Removes session cookies from the browser
+4. **Redirect**: Redirects user to login page
+
+### Features
+- Complete session data removal
+- Secure cookie deletion
+- Automatic redirect to login
+- Prevents session hijacking
+- Works across all pages via navigation button
